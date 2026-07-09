@@ -30,6 +30,7 @@ Each SDK is a **workshop component** — a building block that can be added to a
 
 | SDK | Description |
 |:----|:------------|
+| [**Antigravity CLI**](https://github.com/canonical/agy-sdk) | The terminal-first surface to interact with Antigravity agents. |
 | [**Claude Code**](https://github.com/canonical/claude-code-sdk) | Anthropic's agentic coding tool for the terminal |
 | [**OpenAI Codex**](https://github.com/canonical/codex-sdk) | OpenAI's CLI coding agent |
 | [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk) | GitHub Copilot for the terminal |
