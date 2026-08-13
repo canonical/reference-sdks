@@ -47,6 +47,9 @@ Each SDK is a **workshop component** — a building block that can be added to a
 | [**Rust**](https://github.com/canonical/rust-sdk) | Rust toolchain managed via Rustup |
 | [**.NET**](https://github.com/canonical/dotnet-sdk) | Microsoft .NET SDK |
 | [**Flutter**](https://github.com/canonical/flutter-sdk) | Google's cross-platform UI toolkit |
+| [**OpenJDK**](https://github.com/canonical/openjdk-sdk) | Open-source Java Development Kit (JDK) |
+| [**Maven**](https://github.com/canonical/openjdk-sdk) | Apache Maven build tool for Java projects |
+| [**Gradle**](https://github.com/canonical/openjdk-sdk) | Gradle build system for Java, Android and Kotlin projects |
 | [**uv**](https://github.com/canonical/uv-sdk) | Fast Python package and project manager |
 
 ---
