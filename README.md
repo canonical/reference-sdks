@@ -28,86 +28,85 @@ Each SDK is a **workshop component** — a building block that can be added to a
 
 ## AI Agents & Coding Assistants
 
-| SDK | Description |
-|:----|:------------|
-| [**Antigravity CLI**](https://github.com/canonical/agy-sdk) | The terminal-first surface to interact with Antigravity agents. |
-| [**Claude Code**](https://github.com/canonical/claude-code-sdk) | Anthropic's agentic coding tool for the terminal |
-| [**OpenAI Codex**](https://github.com/canonical/codex-sdk) | OpenAI's CLI coding agent |
-| [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk) | GitHub Copilot for the terminal |
-| [**OpenCode**](https://github.com/canonical/opencode-sdk) | Open-source terminal-based AI coding assistant |
+| SDK                                                                | Description                                                     |
+| :----------------------------------------------------------------- | :-------------------------------------------------------------- |
+| [**Antigravity CLI**](https://github.com/canonical/agy-sdk)        | The terminal-first surface to interact with Antigravity agents. |
+| [**Claude Code**](https://github.com/canonical/claude-code-sdk)    | Anthropic's agentic coding tool for the terminal                |
+| [**OpenAI Codex**](https://github.com/canonical/codex-sdk)         | OpenAI's CLI coding agent                                       |
+| [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk) | GitHub Copilot for the terminal                                 |
+| [**OpenCode**](https://github.com/canonical/opencode-sdk)          | Open-source terminal-based AI coding assistant                  |
 
 ---
 
 ## Languages & Runtimes
 
-| SDK | Description |
-|:----|:------------|
-| [**Go**](https://github.com/canonical/go-sdk) | Go programming language toolchain |
-| [**Node.js**](https://github.com/canonical/node-sdk) | Node.js LTS runtime with Corepack |
-| [**Rust**](https://github.com/canonical/rust-sdk) | Rust toolchain managed via Rustup |
-| [**.NET**](https://github.com/canonical/dotnet-sdk) | Microsoft .NET SDK |
-| [**Flutter**](https://github.com/canonical/flutter-sdk) | Google's cross-platform UI toolkit |
-| [**OpenJDK**](https://github.com/canonical/openjdk-sdk) | Open-source Java Development Kit (JDK) |
-| [**Maven**](https://github.com/canonical/openjdk-sdk) | Apache Maven build tool for Java projects |
-| [**Gradle**](https://github.com/canonical/openjdk-sdk) | Gradle build system for Java, Android and Kotlin projects |
-| [**uv**](https://github.com/canonical/uv-sdk) | Fast Python package and project manager |
+| SDK                                                     | Description                                               |
+| :------------------------------------------------------ | :-------------------------------------------------------- |
+| [**Go**](https://github.com/canonical/go-sdk)           | Go programming language toolchain                         |
+| [**Node.js**](https://github.com/canonical/node-sdk)    | Node.js LTS runtime with Corepack                         |
+| [**Rust**](https://github.com/canonical/rust-sdk)       | Rust toolchain managed via Rustup                         |
+| [**.NET**](https://github.com/canonical/dotnet-sdk)     | Microsoft .NET SDK                                        |
+| [**Flutter**](https://github.com/canonical/flutter-sdk) | Google's cross-platform UI toolkit                        |
+| [**OpenJDK**](https://github.com/canonical/openjdk-sdk) | Open-source Java Development Kit (JDK)                    |
+| [**Maven**](https://github.com/canonical/maven-sdk)   | Apache Maven build tool for Java projects                 |
+| [**Gradle**](https://github.com/canonical/gradle-sdk)  | Gradle build system for Java, Android and Kotlin projects |
+| [**uv**](https://github.com/canonical/uv-sdk)           | Fast Python package and project manager                   |
 
 ---
 
 ## GPU & Hardware Acceleration
 
-| SDK | Description |
-|:----|:------------|
+| SDK                                                                      | Description                                    |
+| :----------------------------------------------------------------------- | :--------------------------------------------- |
 | [**NVIDIA CUDA Toolkit**](https://github.com/canonical/cuda-toolkit-sdk) | NVIDIA CUDA Toolkit for GPU parallel computing |
-| [**AMD ROCm**](https://github.com/canonical/rocm-sdk) | AMD ROCm open GPU compute platform |
-| [**Intel OpenVINO**](https://github.com/canonical/openvino-sdk) | Intel OpenVINO toolkit for AI inference |
+| [**AMD ROCm**](https://github.com/canonical/rocm-sdk)                    | AMD ROCm open GPU compute platform             |
+| [**Intel OpenVINO**](https://github.com/canonical/openvino-sdk)          | Intel OpenVINO toolkit for AI inference        |
 
 ---
 
 ## AI / ML Model Serving
 
-| SDK | Description |
-|:----|:------------|
-| [**Ollama**](https://github.com/canonical/ollama-sdk) | Local LLM runtime for running open-weight models |
+| SDK                                                      | Description                                         |
+| :------------------------------------------------------- | :-------------------------------------------------- |
+| [**Ollama**](https://github.com/canonical/ollama-sdk)    | Local LLM runtime for running open-weight models    |
 | [**ComfyUI**](https://github.com/canonical/comfy-ui-sdk) | Node-based UI for Stable Diffusion image generation |
 
 ---
 
 ## Embedded Systems & RTOS
 
-| SDK | Description | Targets |
-|:----|:------------|:--------|
-| [**Zephyr RTOS**](https://github.com/canonical/zephyr-sdk) | Zephyr RTOS build environment (west, cmake, ninja) | Host `amd64` |
+| SDK                                                                          | Description                                                                 | Targets                 |
+| :--------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :---------------------- |
+| [**Zephyr RTOS**](https://github.com/canonical/zephyr-sdk)                   | Zephyr RTOS build environment (west, cmake, ninja)                          | Host `amd64`            |
 | [**Zephyr Toolchains**](https://github.com/canonical/zephyr-toolchains-sdks) | Monorepo of Zephyr cross-compiler toolchains, plus the Zephyr SDK NG bundle | 30 target architectures |
 
 ---
 
 ## Robotics
 
-| SDK | Description |
-|:----|:------------|
-| [**ROS 2**](https://github.com/canonical/ros2-sdk) | ROS 2 robotics development environment |
+| SDK                                                | Description                            |
+| :------------------------------------------------- | :------------------------------------- |
+| [**ROS 2**](https://github.com/canonical/ros2-minimal-sdk) | ROS 2 robotics development environment |
 
 ---
 
 ## Developer Tools & Infrastructure
 
-| SDK | Description |
-|:----|:------------|
-| [**Docker**](https://github.com/canonical/docker-sdk) | Docker container runtime and CLI |
-| [**direnv**](https://github.com/canonical/direnv-sdk) | Automatic per-directory environment variable loader |
-| [**VS Code Remote**](https://github.com/canonical/vscode-remote-sdk) | SSH server for VS Code Remote Development |
-| [**GitHub Actions Runner**](https://github.com/canonical/github-runner-sdk) | Self-hosted GitHub Actions runner |
-| [**JupyterLab**](https://github.com/canonical/jupyter-sdk) | Browser-based interactive Python IDE |
+| SDK                                                                         | Description                                         |
+| :-------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [**Docker**](https://github.com/canonical/docker-sdk)                       | Docker container runtime and CLI                    |
+| [**direnv**](https://github.com/canonical/direnv-sdk)                       | Automatic per-directory environment variable loader |
+| [**GitHub Actions Runner**](https://github.com/canonical/github-runner-sdk) | Self-hosted GitHub Actions runner                   |
+| [**JupyterLab**](https://github.com/canonical/jupyter-sdk)                  | Browser-based interactive Python IDE                |
 
 ---
 
 ## Utilities & Templates
 
-| Directory | Purpose |
-|:----------|:--------|
-| [`template-sdk/`](https://github.com/canonical/template-sdk) | Reference template and best-practice guide for creating new SDKs |
-| [`sdkcraft-actions/`](https://github.com/canonical/sdkcraft-actions) | Shared helper scripts used across SDK build and lifecycle hooks |
+| Directory                                                            | Purpose                                                          |
+| :------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| [`template-sdk/`](https://github.com/canonical/template-sdk)         | Reference template and best-practice guide for creating new SDKs |
+| [`sdkcraft-actions/`](https://github.com/canonical/sdkcraft-actions) | Shared helper scripts used across SDK build and lifecycle hooks  |
 
 ---
 
