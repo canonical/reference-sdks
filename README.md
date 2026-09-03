@@ -78,18 +78,7 @@ Each SDK is a **workshop component** — a building block that can be added to a
 | SDK | Description | Targets |
 |:----|:------------|:--------|
 | [**Zephyr RTOS**](https://github.com/canonical/zephyr-sdk) | Zephyr RTOS build environment (west, cmake, ninja) | Host `amd64` |
-| [**Zephyr SDK NG**](https://github.com/canonical/zephyr-sdk-ng) | Zephyr SDK with bundled cross-compilers | Host `amd64` |
-
-#### Architecture-specific Zephyr Toolchains
-
-| SDK | Target Triple |
-|:----|:--------------|
-| [**Zephyr x86_64**](https://github.com/canonical/zephyr-amd64-sdk) | `x86_64-zephyr-elf` |
-| [**Zephyr ARM (32-bit)**](https://github.com/canonical/zephyr-arm-sdk) | `arm-zephyr-eabi` |
-| [**Zephyr AArch64**](https://github.com/canonical/zephyr-arm64-sdk) | `aarch64-zephyr-elf` |
-| [**Zephyr RISC-V 64**](https://github.com/canonical/zephyr-riscv64-sdk) | `riscv64-zephyr-elf` |
-| [**Zephyr Xtensa ESP32**](https://github.com/canonical/zephyr-xtensa-espressif-esp32-sdk) | `xtensa-espressif_esp32_zephyr-elf` |
-| [**Zephyr Xtensa ESP32-S3**](https://github.com/canonical/zephyr-xtensa-espressif-esp32s3-sdk) | `xtensa-espressif_esp32s3_zephyr-elf` |
+| [**Zephyr Toolchains**](https://github.com/canonical/zephyr-toolchains-sdks) | Monorepo of Zephyr cross-compiler toolchains, plus the Zephyr SDK NG bundle | 30 target architectures |
 
 ---
 
