@@ -28,13 +28,14 @@ Each SDK is a **workshop component** — a building block that can be added to a
 
 ## AI Agents & Coding Assistants
 
-| SDK                                                                | Description                                                     |
-| :----------------------------------------------------------------- | :-------------------------------------------------------------- |
-| [**Antigravity CLI**](https://github.com/canonical/agy-sdk)        | The terminal-first surface to interact with Antigravity agents. |
-| [**Claude Code**](https://github.com/canonical/claude-code-sdk)    | Anthropic's agentic coding tool for the terminal                |
-| [**OpenAI Codex**](https://github.com/canonical/codex-sdk)         | OpenAI's CLI coding agent                                       |
-| [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk) | GitHub Copilot for the terminal                                 |
-| [**OpenCode**](https://github.com/canonical/opencode-sdk)          | Open-source terminal-based AI coding assistant                  |
+| SDK                                                                     | Description                                                     |
+| :---------------------------------------------------------------------- | :-------------------------------------------------------------- |
+| [**Antigravity CLI**](https://github.com/canonical/agy-sdk)             | The terminal-first surface to interact with Antigravity agents. |
+| [**Claude Code**](https://github.com/canonical/claude-code-sdk)         | Anthropic's agentic coding tool for the terminal                |
+| [**OpenAI Codex**](https://github.com/canonical/codex-sdk)              | OpenAI's CLI coding agent                                       |
+| [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk)      | GitHub Copilot for the terminal                                 |
+| [**OpenCode**](https://github.com/canonical/opencode-sdk)               | Open-source terminal-based AI coding assistant                  |
+| [**Pi Coding Agent**](https://github.com/canonical/pi-coding-agent-sdk) | Minimal, extensible terminal coding agent                       |
 
 ---
 
