@@ -35,7 +35,7 @@ Each SDK is a **workshop component** — a building block that can be added to a
 | [**OpenAI Codex**](https://github.com/canonical/codex-sdk)              | OpenAI's CLI coding agent                                       |
 | [**GitHub Copilot CLI**](https://github.com/canonical/copilot-sdk)      | GitHub Copilot for the terminal                                 |
 | [**OpenCode**](https://github.com/canonical/opencode-sdk)               | Open-source terminal-based AI coding assistant                  |
-| [**Pi Coding Agent**](https://github.com/canonical/pi-coding-agent-sdk) | Minimal, extensible terminal coding agent                       |
+| [**Pi Coding Agent**](https://github.com/canonical/pi-sdk)              | Minimal, extensible terminal coding agent                       |
 
 ---
 
