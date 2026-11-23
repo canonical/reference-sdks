@@ -1,7 +1,12 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { branchProblems, publishStale, safeUrl, stageState, summarize } from '../site/model.js';
+import { branchProblems, formatDate, publishStale, safeUrl, stageState, summarize } from '../site/model.js';
+
+test('formatDate renders UTC minutes', () => {
+  assert.equal(formatDate('2026-11-20T23:44:03Z'), '2026-11-20 23:44 UTC');
+  assert.equal(formatDate(undefined), 'unknown date');
+});
 
 const run = (state, stages = {}) => ({
   state,

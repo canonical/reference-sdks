@@ -109,6 +109,11 @@ export function relativeTime(iso, now = Date.now()) {
   return `${Math.round(hours / 24)}d ago`;
 }
 
+export function formatDate(iso) {
+  const at = new Date(iso ?? '');
+  return Number.isNaN(at.getTime()) ? 'unknown date' : `${at.toISOString().slice(0, 16).replace('T', ' ')} UTC`;
+}
+
 // Only GitHub links from the snapshot are rendered as anchors.
 export function safeUrl(value) {
   try {

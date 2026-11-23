@@ -1,6 +1,7 @@
 import {
   LABELS,
   branchProblems,
+  formatDate,
   publishStale,
   relativeTime,
   repoProblems,
@@ -125,13 +126,17 @@ function publishCell(branch) {
   const release = branch.release;
   const platforms = Object.entries(release?.stages?.publish.platforms ?? {});
   const failing = platforms.filter(([, s]) => tone(s) === 'bad').map(([p]) => p);
+  const published = stageState(release, 'publish') === 'success';
   return el(
     'td',
     {},
     el(
       'div',
       { class: 'stack' },
-      stageBadge(release, 'publish', 'Latest'),
+      published
+        ? badge('success', { label: formatDate(release.updatedAt), href: release.url, title: runTitle(release, 'publish') })
+        : stageBadge(release, 'publish', 'Latest'),
+      published ? el('span', { class: 'small muted', text: `published ${relativeTime(release.updatedAt)}` }) : null,
       failing.length ? el('span', { class: 'small bad-text', text: failing.join(', ') }) : null,
       publishStale(branch) ? badge('failure', { label: `failed ${relativeTime(branch.lastPublishFailure.at)}`, href: branch.lastPublishFailure.url }) : null,
     ),
