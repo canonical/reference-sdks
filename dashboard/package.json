@@ -1,0 +1,14 @@
+{
+  "name": "reference-sdks-dashboard",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "collect": "node collect.mjs --readme ../README.md --out _site/data.json",
+    "build": "rm -rf _site && cp -r site _site && npm run collect",
+    "preview": "python3 -m http.server --directory _site 8000"
+  }
+}

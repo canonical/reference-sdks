@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Reference SDKs — CI dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Reference SDKs — CI dashboard</h1>
+        <p id="meta">Loading…</p>
+      </div>
+      <nav>
+        <a href="https://github.com/canonical/reference-sdks">Repository</a>
+      </nav>
+    </header>
+
+    <section id="tiles" aria-label="Summary"></section>
+
+    <section class="controls" aria-label="Filters">
+      <input id="search" type="search" placeholder="Filter by SDK, repository or branch" aria-label="Filter" />
+      <label><input id="problems-only" type="checkbox" /> Problems only</label>
+      <span id="active-filter"></span>
+    </section>
+
+    <main>
+      <table id="dashboard">
+        <thead>
+          <tr>
+            <th scope="col">SDK</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Renovate PRs</th>
+            <th scope="col">Build</th>
+            <th scope="col">Tests</th>
+            <th scope="col">Store publish</th>
+            <th scope="col">Last published</th>
+            <th scope="col">Recent runs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <footer>
+      <details>
+        <summary>Legend</summary>
+        <ul id="legend"></ul>
+        <p>
+          <strong>PR</strong> is the latest <code>build.yml</code> run for a pull request targeting the branch.
+          <strong>Release</strong> is the latest <code>upload.yml</code> run on the branch (pack, optional tests, Store upload).
+          <em>Setup failed</em> means the job broke before <code>sdkcraft pack</code> (runner, LXD or sdkcraft install).
+          <em>Didn't start</em> (<code>startup_failure</code>) usually means an invalid or inaccessible workflow;
+          <em>needs approval</em> (<code>action_required</code>) usually means the PR was authored by
+          <code>github-actions[bot]</code> instead of the Renovate app.
+        </p>
+      </details>
+    </footer>
+  </body>
+</html>

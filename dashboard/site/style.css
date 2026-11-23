@@ -1,0 +1,303 @@
+:root {
+  --bg: #f7f7f7;
+  --fg: #111;
+  --muted: #666;
+  --line: #d9d9d9;
+  --ok: #0e8420;
+  --bad: #c7162b;
+  --warn: #cc7900;
+  --busy: #24598f;
+  --ok-bg: #e6f4e8;
+  --bad-bg: #fbe8ea;
+  --warn-bg: #fdf2e0;
+  --busy-bg: #e5eef8;
+  --muted-bg: #ececec;
+  font-family: Ubuntu, 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1b1b;
+    --fg: #eee;
+    --muted: #9a9a9a;
+    --line: #3a3a3a;
+    --ok-bg: #16351c;
+    --bad-bg: #44161c;
+    --warn-bg: #3d2d10;
+    --busy-bg: #172a40;
+    --muted-bg: #2c2c2c;
+    --ok: #63c672;
+    --bad: #f06a7a;
+    --warn: #f0b050;
+    --busy: #7fb0e6;
+  }
+}
+
+body {
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  max-width: 1600px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+#meta,
+.muted {
+  color: var(--muted);
+}
+
+#tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ok);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tile.bad {
+  border-left-color: var(--bad);
+}
+
+.tile[aria-pressed='true'] {
+  outline: 2px solid var(--busy);
+}
+
+.tile .count {
+  font-size: 1.8rem;
+}
+
+.tile .unit {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+#search {
+  min-width: 320px;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+}
+
+#active-filter button {
+  font: inherit;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main {
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  font-weight: 500;
+  border-bottom: 2px solid var(--line);
+}
+
+tr.group-start > * {
+  border-top: 2px solid var(--line);
+}
+
+th.sdk {
+  min-width: 220px;
+  max-width: 320px;
+  font-weight: 500;
+}
+
+.repo,
+.category,
+.small {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.4rem;
+}
+
+.branch {
+  font-family: ui-monospace, monospace;
+  white-space: nowrap;
+}
+
+tr.untracked td {
+  opacity: 0.6;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  background: var(--muted-bg);
+  color: var(--muted);
+}
+
+.badge b {
+  margin-right: 0.35rem;
+  font-weight: 500;
+}
+
+.badge.ok {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+
+.badge.bad {
+  background: var(--bad-bg);
+  color: var(--bad);
+}
+
+.badge.warn {
+  background: var(--warn-bg);
+  color: var(--warn);
+}
+
+.badge.busy {
+  background: var(--busy-bg);
+  color: var(--busy);
+}
+
+a .badge {
+  text-decoration: none;
+}
+
+a:has(.badge) {
+  text-decoration: none;
+}
+
+.bad-text {
+  color: var(--bad);
+}
+
+.warn-text {
+  color: var(--warn);
+}
+
+.dots {
+  display: inline-flex;
+  gap: 2px;
+  vertical-align: middle;
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--muted-bg);
+}
+
+.dot.ok {
+  background: var(--ok);
+}
+
+.dot.bad {
+  background: var(--bad);
+}
+
+.dot.warn {
+  background: var(--warn);
+}
+
+.dot.busy {
+  background: var(--busy);
+}
+
+tr.failures td {
+  padding-top: 0;
+  border-top: none;
+}
+
+tr.failures summary {
+  cursor: pointer;
+  color: var(--bad);
+  font-size: 0.85rem;
+}
+
+tr.failures pre {
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.4rem 0.6rem;
+  white-space: pre-wrap;
+  background: var(--muted-bg);
+  font-size: 0.8rem;
+}
+
+footer {
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
